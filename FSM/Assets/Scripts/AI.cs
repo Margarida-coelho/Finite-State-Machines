@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class AI : MonoBehaviour {
+public class AI : MonoBehaviour
+{
 
     NavMeshAgent agent;
     Animator anim;
@@ -11,7 +12,8 @@ public class AI : MonoBehaviour {
 
     public Transform player;
 
-    void Start() {
+    void Start()
+    {
 
         agent = GetComponent<NavMeshAgent>();
         anim = GetComponent<Animator>();
@@ -19,7 +21,8 @@ public class AI : MonoBehaviour {
     }
 
 
-    void Update() {
+    void Update()
+    {
 
         currentState = currentState.Process();
     }
